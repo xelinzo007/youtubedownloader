@@ -17,9 +17,11 @@ function toastMsg(msg, error = false, to = 3000) {
 
 function loadingToggle(isLoading = false) {
 	if (isLoading) {
+		console.log("comming in IF")
 		loadingScreen.show();
 		ytInfo.hide();
 	} else {
+		console.log("Comming in else")
 		loadingScreen.hide();
 		ytInfo.show();
 		linkInput.blur();
@@ -29,6 +31,10 @@ function loadingToggle(isLoading = false) {
 $(".link-box").on("click", () => {
 	linkInput.focus();
 });
+
+// $(".link-input").on("paste", function(event) {
+//     linkInput.focus(); // Focus on the input field
+// });
 
 function formatListMaker(Obj) {
 	Obj.forEach((item) => {
@@ -78,6 +84,7 @@ function formatListMaker(Obj) {
 	$(document.body).on("click", ".quality-item", (e) => {
 		var item = e.currentTarget;
 		var link = $(item).data("link");
+		console.log("comming hereee")
 		window.open(link);
 	});
 }
