@@ -20,13 +20,22 @@ const closeBtn = $(".close-btn");
 // 	}
 // });
 
-linkInput.on('click', function (e) {
-    var link = linkInput.val();
-    if (link) {
-        loadSideBar(link);
-    }
-});
+// linkInput.on('paste', function (e) {
+// 	console.log('paste',  e.target.value)
+// 	var link = e.target.value;
+// 	if (link) {
+// 		loadSideBar(link);
+// 	}
+// });
 
+
+linkInput.on('click', function (e) {
+	//console.log('paste',  e.target.value)
+	var link = linkInput.val();
+	if (link) {
+		loadSideBar(link);
+	}
+});
 
 
 function loadSideBar(link) {
