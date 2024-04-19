@@ -13,6 +13,8 @@ const ytInfo = $(".yt-info");
 const loadingScreen = $(".loading-screen");
 const closeBtn = $(".close-btn");
 
+console.log(qualityList)
+
 // linkInput.on('click',function (e) {
 // 	var link = linkInput.val();
 // 	if (e.which == 13 && link) {
